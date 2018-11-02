@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "466688557575",
+    "firebase_url": "https://windows-remote-b9983.firebaseio.com",
+    "project_id": "windows-remote-b9983",
+    "storage_bucket": "windows-remote-b9983.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466688557575:android:40331c3b4d7c99dc",
+        "android_client_info": {
+          "package_name": "io.github.codistro.remote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466688557575-c0a1br3mn6bpkpmntvj0mi5fd2d0i024.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.codistro.remote",
+            "certificate_hash": "174dbef8ed77d2627ad68e6dad055bf0e4e5858d"
+          }
+        },
+        {
+          "client_id": "466688557575-1irek5l4gp1els0b68i9g4s33e8udmph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFyLH0ICWL5V4Pmhp9-iYIO8BvMa5h6Jw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466688557575-1irek5l4gp1els0b68i9g4s33e8udmph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
