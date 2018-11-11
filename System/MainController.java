@@ -22,22 +22,22 @@ public class MainController{
 				case 1:
 					// Shutdown system
 					System.out.println(1);
-	 				//r.exec("shutdown -s");
+	 				r.exec("shutdown -s");
 					break;
 				case 2:
 					 // Restart system
 					System.out.println(2);
-	 				//r.exec("shutdown -r");
+	 				r.exec("shutdown -r");
 					break;
 				case 3:
 					// Hibernate system
 					System.out.println(3);
-					//r.exec("shutdown -h");
+					r.exec("shutdown -h");
 					break;
 				case 4:
 					System.out.println(4);
 					// Sleep system
-					//r.exec("");
+					r.exec("");
 			}
 		}
 		catch(Exception e){

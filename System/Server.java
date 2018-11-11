@@ -14,7 +14,7 @@ public class Server implements Runnable{
 
 	@Override
 	public void run(){
-		System.out.println(Thread.currentThread().getId());
+		//System.out.println(Thread.currentThread().getId());
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			String command = br.readLine();
