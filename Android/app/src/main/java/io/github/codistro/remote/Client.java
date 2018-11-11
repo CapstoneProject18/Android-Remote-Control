@@ -6,13 +6,16 @@ import java.net.Socket;
 
 public class Client {
 
-	public String address;
-	public int port;
+	public String address = "192.168.43.117";
+	public int port = 5432;
+
+	public Client(){}
 
 	public Client(String address, int port){
 		this.address = address;
 		this.port = port;
 	}
+
 
 	public void send(String message) throws Exception{
 		Socket socket = new Socket(address, port);

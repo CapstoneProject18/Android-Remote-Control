@@ -10,7 +10,7 @@ public class Connection extends AsyncTask<String, Void, Void> {
     protected Void doInBackground(String... commands) {
         try {
             try {
-                Client client = new Client("192.168.43.117", 5432);
+                Client client = new Client();
                 client.send(commands[0]);
             }
             catch (Exception e){
