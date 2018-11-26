@@ -11,7 +11,7 @@ public class Client {
 
 	public Client(){}
 
-	public Client(String address, int port){
+	public Client(String address){
 		this.address = address;
 		this.port = port;
 	}

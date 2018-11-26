@@ -8,4 +8,10 @@
         app:showAsAction="always"
         android:icon="@drawable/ic_exit_to_app_black_24dp"
         />
+    <item
+        android:id="@+id/add_ip"
+        android:title="IP"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_add_black_24dp"
+        />
 </menu>

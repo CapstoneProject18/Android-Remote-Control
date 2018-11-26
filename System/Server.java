@@ -18,7 +18,8 @@ public class Server implements Runnable{
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			String command = br.readLine();
-			MainController.run(command);
+			//MainController.run(command);
+			System.out.println(command);
 		}
 		catch(Exception e){
 

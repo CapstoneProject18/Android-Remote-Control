@@ -10,8 +10,8 @@ public class Connection extends AsyncTask<String, Void, Void> {
     protected Void doInBackground(String... commands) {
         try {
             try {
-                Client client = new Client();
-                client.send(commands[0]);
+                Client client = new Client(commands[0]);
+                client.send(commands[1]);
             }
             catch (Exception e){
                 Log.d("TAG", e.toString());
