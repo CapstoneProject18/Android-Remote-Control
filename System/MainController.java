@@ -35,16 +35,16 @@ public class MainController{
 			switch(command)
 			{
 				case Service.POWER_TURN_OFF:
-					System.out.println("I am in "+command);
-	 				//r.exec("shutdown -s");
+					//System.out.println("I am in "+command);
+	 				r.exec("shutdown -s");
 					break;
 				case Service.POWER_RESTART:
-					System.out.println("I am in "+command);					
-	 				//r.exec("shutdown -r");
+					//System.out.println("I am in "+command);					
+	 				r.exec("shutdown -r");
 					break;
 				case Service.POWER_HIBERNATE:
-					System.out.println("I am in "+command);					
-					//r.exec("shutdown -h");
+					//System.out.println("I am in "+command);					
+					r.exec("shutdown -h");
 					break;
 				case "4":
 					System.out.println("I am in "+command);					
