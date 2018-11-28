@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Dashboard" />
-        <activity android:name=".PowerActivity"></activity>
+        <activity android:name=".PowerActivity" />
+        <activity android:name=".Browser"></activity>
     </application>
 
 </manifest>

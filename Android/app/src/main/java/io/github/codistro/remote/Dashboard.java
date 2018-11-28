@@ -29,7 +29,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
-    private CardView powerCard;
+    private CardView powerCard, browserCard;
 
     private String IP;
 
@@ -46,6 +46,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
 
         powerCard = findViewById(R.id.powercard);
+        browserCard = findViewById(R.id.browsercard);
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -75,8 +76,8 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
 
 
-        powerCard.setOnClickListener(Dashboard.this);
-
+        powerCard.setOnClickListener(this);
+        browserCard.setOnClickListener(this);
 
     }
 
@@ -144,6 +145,8 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         if(view.getId() == R.id.powercard){
             startActivity(new Intent(this, PowerActivity.class));
         }
-
+        else if(view.getId() == R.id.browsercard){
+            startActivity(new Intent(this, Browser.class));
+        }
     }
 }

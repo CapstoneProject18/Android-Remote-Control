@@ -65,6 +65,7 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:id="@+id/browsercard"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"

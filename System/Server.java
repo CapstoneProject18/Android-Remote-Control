@@ -18,17 +18,18 @@ public class Server implements Runnable{
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			String command = br.readLine();
-			//MainController.run(command);
-			System.out.println(command);
+			MainController.run(command);
+			System.out.println("In Server "+command);
 		}
 		catch(Exception e){
 
-			System.out.println(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 
 	public static void main(String[] args) throws Exception {
 		ServerSocket server = new ServerSocket(5432);
+		System.out.println("Server running...");
 		while(true){
 			Socket socket = server.accept();
 			Server s = new Server(socket);

@@ -33,13 +33,13 @@ public class PowerActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.shutdown:
-                new Connection().execute(IP, "1");
+                new Connection().execute(IP, Service.POWER_TURN_OFF);
                 break;
             case R.id.restart:
-                new Connection().execute(IP, "2");
+                new Connection().execute(IP, Service.POWER_RESTART);
                 break;
             case R.id.hibernate:
-                new Connection().execute(IP, "3");
+                new Connection().execute(IP, Service.POWER_HIBERNATE);
                 break;
         }
     }
