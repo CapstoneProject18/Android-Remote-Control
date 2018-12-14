@@ -21,25 +21,17 @@ width: 400px;
 background-color:dimgray;
 }
 
-.social_icon span{
-font-size: 60px;
+
+.Heading{
+   font-size: 60px;
 margin-left: 10px;
-color: #FFFF00;
+color: #FFFF00; 
+    
 }
 
-.social_icon span:hover{
-color: greenyellow;
-cursor: pointer;
-}
 
 .card-header h3{
 color: whitesmoke;
-}
-
-.social_icon{
-position: absolute;
-right: 20px;
-top: 0px;
 }
 
 .input-group-prepend span{
@@ -67,17 +59,6 @@ margin-left: 15px;
 margin-right: 5px;
 }
 
-.signup_btn{
-color: black;
-background-color: #FFFF00;
-width: 100px;
-}
-
-.signup_btn:hover{
-color: black;
-background-color: greenyellow;
-}
-
 .links{
 color: white;
 }
@@ -85,3 +66,40 @@ color: white;
 .links a{
 margin-left: 4px;
 }
+
+.button {
+  border-radius: 4px;
+  background-color: #0892D0	;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
