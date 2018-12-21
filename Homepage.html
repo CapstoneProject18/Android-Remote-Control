@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="Homepage.css">
+</head>
+<script>
+  var x = Math.floor((Math.random() * 1000) + 1);
+  //alert(x);
+  </script>
+
+<script>
+var  POWER        = "1";
+var POWER_TURN_OFF   = "11";
+var POWER_RESTART    = "12";
+var POWER_HIBERNATE  = "13";
+var BROWSER          = "2";
+var  BROWSER_NEW_TAB  = "21";
+var BROWSER_TAB_NAV_LEFT = "22";
+var BROWSER_TAB_NAV_RIGHT = "23";
+  var BROWSER_SEARCH = "24";
+  var BROWSER_CLOSE_TAB = "25";
+  
+
+  var KEYBOARD     = "3";
+  var KEYBOARD_TEXT  = "31";
+  var KEYBOARD_ALT_TAB = "32";
+  var KEYBOARD_ENTER   = "33";
+  var KEYBOARD_TAB     = "34";
+  var KEYBOARD_UP    = "35";
+  var KEYBOARD_DOWN  = "36";
+  var KEYBOARD_BACKSPACE = "37";
+
+  
+
+            function show() {
+  var email = 768;
+  var pass  = 11;
+    console.log(email, pass);
+    var xhr = new XMLHttpRequest();
+  xhr.open("GET", 'https://5cwuqiochl.execute-api.us-east-2.amazonaws.com/prod/dynamoWrite?FirstName='+email+'&LastName='+pass, false);
+  xhr.send();
+}
+
+
+            function showDetails() {
+  var email = 768;
+  var pass  = 24;
+    console.log(email, pass);
+    var xhr = new XMLHttpRequest();
+  xhr.open("GET", 'https://5cwuqiochl.execute-api.us-east-2.amazonaws.com/prod/dynamoWrite?FirstName='+email+'&LastName='+pass, false);
+  xhr.send();
+}
+
+      function Restart() {
+  var email = 768;
+  var pass  = 12;
+    console.log(email, pass);
+    var xhr = new XMLHttpRequest();
+  xhr.open("GET", 'https://5cwuqiochl.execute-api.us-east-2.amazonaws.com/prod/dynamoWrite?FirstName='+email+'&LastName='+pass, false);
+  xhr.send();
+}
+    function Hibernate() {
+  var email = 768;
+  var pass  = 13;
+    console.log(email, pass);
+    var xhr = new XMLHttpRequest();
+  xhr.open("GET", 'https://5cwuqiochl.execute-api.us-east-2.amazonaws.com/prod/dynamoWrite?FirstName='+email+'&LastName='+pass, false);
+  xhr.send();
+}
+  
+
+  function Chrome_open() {
+  var email = 768;
+  var pass  = 21;
+    console.log(email, pass);
+    var xhr = new XMLHttpRequest();
+  xhr.open("GET", 'https://5cwuqiochl.execute-api.us-east-2.amazonaws.com/prod/dynamoWrite?FirstName='+email+'&LastName='+pass, false);
+  xhr.send();
+}
+  
+
+  function Chrome_close() {
+  var email = 768;
+  var pass  = 25;
+    console.log(email, pass);
+    var xhr = new XMLHttpRequest();
+  xhr.open("GET", 'https://5cwuqiochl.execute-api.us-east-2.amazonaws.com/prod/dynamoWrite?FirstName='+email+'&LastName='+pass, false);
+  xhr.send();
+}
+//function showDetails() {
+
+
+
+
+</script>
+  
+
+<body> 
+  
+ 
+<div class="container">
+  <div class="Heading" ><h2 align="center">Select your preferred functionality</h2></div>
+  <div class="card-columns">
+    <div class="card ">
+      <div class="card-body text-center">
+          <h2>Shutdown</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+
+         
+        <button type="button" class="btn btn-primary btn-lg" onclick="show()"><i class="fa fa-power-off"></i> <span>Shutdown</span>  </button>  
+
+          <p class="card-text"></p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-body text-center">
+	        <h2>Chrome Search</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+           
+
+            <button type="button" class="btn btn-primary btn-lg" onclick="showDetails()"><i class="fas fa-sign-out-alt"></i>  <span> Chrome Search </span>  </button>
+<p class="card-text"></p>
+      </div>
+    </div>
+
+    
+       
+   
+    <div class="card ">
+      <div class="card-body text-center">
+	  	        <h2>Restart</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+<button type="button" class="btn btn-primary btn-lg" onclick="Restart()"><i class="fa fa-refresh"></i>  <span>Restart</span>  </button>
+        <p class="card-text"></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body text-center">
+	  	        <h2>Hibernate</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+<button type="button" class="btn btn-primary btn-lg" onclick="Hibernate()"><i class="fas fa-moon"></i> 
+ <span>Hibernate</span>  </button>
+<p class="card-text"></p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-body text-center">
+	  	        <h2>Chrome open</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+<button type="button" class="btn btn-primary btn-lg" onclick="Chrome_open()">Chrome Open</button>
+
+<p class="card-text"></p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-body text-center">
+	  	        <h2>Chrome close</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+<button type="button" class="btn btn-primary btn-lg" onclick="Chrome_close()">Chrome Close </button>
+
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,106 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+
+html,body{
+background-image: url("light.jpg") ;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Oswald', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 600px;
+background-color:dimgray;
+}
+
+
+.Heading{
+   font-size: 60px;
+margin-left: 10px;
+color: #FFFF00; 
+    
+}
+
+
+.card-header h3{
+color: whitesmoke;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFFF00;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0 ;
+box-shadow: 0 0 0 0 ;
+
+}
+
+.remember{
+color: whitesmoke;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #0892D0	;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
